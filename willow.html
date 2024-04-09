@@ -1,0 +1,55 @@
+
+<!-- Mirrored from 172.31.169.169/token.php?stream=Zee%20TV%20HD by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Nov 2023 18:54:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<html>
+
+    <head>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+        <script type ="text/javascript" src ="main.js"> </script>
+        <title></title>
+        
+    </head>
+
+<body>
+    <div id="header">
+        
+        
+    </div>
+    <div id="clappr" style="border:px solid white;width:;margin: % auto 0% auto;"></div>
+    
+<script>
+ var player = new Clappr.Player({
+  source:"https://buc01.jobdone.top:8088/live/webcricwillow/playlist.m3u8?vidictid=198217531005&id=120375&pk=178537ded62dfb21086ad77600736c4f4d55aa4aa8e286f18406606cad6907748a33a8211f8bf46c996898a684432b54061e7a11a541f29304c9688e10a95516",
+    parentId: "#clappr",
+  width: '100%',
+  height: '100%',
+  autoPlay: true,
+    //gaAccount: 'UA-44332211-1',
+  //gaTrackerName: 'MyPlayerInstance'
+  });
+</script>
+<script>
+    function toggleFullScreenHandler(e, target) {
+        var target = document.getElementById(target);
+        /* Check whether in fullscreen mode */
+        if (document.webkitIsFullScreen) {
+            /* Cancel the fullscreen mode */
+            document.webkitCancelFullScreen();
+        } else {
+            /* Switch on the fullscreen mode */
+            target.webkitRequestFullScreen();
+        }
+    }
+
+    document.getElementById('toggleVideo').addEventListener('click', function(e) {
+        toggleFullScreenHandler(e, 'clappr');
+    }, false);
+
+    document.addEventListener('click', function(e) {
+        toggleFullScreenHandler(e);
+    }, false);
+</script>
+
+</body>
+
+</html>

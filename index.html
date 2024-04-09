@@ -1,0 +1,817 @@
+<html dir="ltr" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b"
+  xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr"
+  class="fa-events-icons-ready">
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+
+  <link rel="canonical">
+  <link href="https://9anime.skin/theme/9anime/favicon.png?ver=0.555" rel="icon" type="image/x-icon">
+  <link hreflang="en" rel="alternate">
+  <meta charset="UTF-8">
+  <meta content="unsafe-url" name="referrer">
+
+
+  <title>FREE FLIX TV</title>
+
+  <meta content="" property="og:image">
+  <meta content="website" property="og:type">
+
+  <meta content="index/follow" name="robots">
+  <style type="text/css">
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: url(//fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf)format('truetype');
+    }
+  </style>
+  <link rel="stylesheet" href="https://9anime.skin/theme/9anime/assets/css/style.css?ver=0.555">
+  <script>
+    if (localStorage.getItem('isDark')) {
+      document.documentElement.classList.add('dark')
+    }
+  </script>
+  <script src="https://9anime.skin/theme/9anime/assets/js/3.6.0-jquery.min.js?ver=0.555"></script>
+  <script src="https://use.fontawesome.com/1be97966ae.js"></script>
+  <link href="https://use.fontawesome.com/1be97966ae.css" media="all" rel="stylesheet">
+<style> 
+.popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            max-width: 300px;
+        }
+
+        .button-section {
+            margin-top: 8px;
+        }
+
+        .button {
+            display: inline-block;
+            width: 70%;
+            padding: 5px;
+            margin: 5px 0;
+            cursor: pointer;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+    border-style: solid;
+  border-color: green;
+        }
+
+        .button:hover {
+            background: #ddd;
+        }
+
+        .cancel-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            color: #555;
+        }
+.material-icons {
+            font-family: 'Material Icons';
+            font-size: 24px;
+        }
+
+
+
+/* CSS */
+.button-4 {margin: 5px 0px;
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 5px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  line-width: 20px;
+  list-style: none;
+  padding: 5px 25px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.button-4:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.button-4:focus {
+  outline: 1px transparent;
+}
+
+.button-4:before {
+  display: none;
+}
+
+.button-4:-webkit-details-marker {
+  display: none;
+          }
+</style>
+<style>
+  body {
+  margin: 0;
+}
+
+.sticky-container {
+  position: relative;
+}
+
+#player-container {
+  width: 100%;
+  height: 100%; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+
+</style>
+</head>
+
+<body class="break-word bc-131 iv pv">
+  <header>
+    <div class="container section" id="header">
+      <div class="widget LinkList" data-version="2" id="menu">
+        <div class="toggler">
+          <svg aria-hidden="true" height="1em" preserveAspectRatio="xMidYMid meet" role="img" viewBox="0 0 24 24"
+            width="1em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M3 12h18"></path>
+              <path d="M3 6h18"></path>
+              <path d="M3 18h18"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="widget-content menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="widget Header" data-version="2" id="logo" style="text-align: center;">
+        <div class="header-widget" style="text-align: center;">
+          <a class="header-image-wrapper" href="index.html">
+            <img style="text-align: center;" alt="BD SPORTZ" data-original-height="213px" data-original-width="744px"
+             src="img/logo.png" >
+          </a>
+        </div>
+      </div>
+
+
+
+      
+    </div>
+  </header>
+  <!-- Container for the sticky player and footer -->
+  <div class="sticky-container">
+
+  
+  <main class="hero-image hero-image max-w mx-auto gta-ms grid container expand">
+    <div class="section" id="main">
+      <div class="widget">
+        <article class="py-09">
+          <section class="stream">
+
+            <div id="shadow" style="display: none;"></div>
+            <div class="DagPlaArea DagTo">
+              <div id="PlayVideo" class="video-content">
+                <div id="embed_holder">
+                  <div class="player-embed" id="pembed">
+                    <div class="playerload"></div>
+                    <div id="player_embed">
+                      <div class="pframe">
+                        
+
+    <!-- Plyr.io Player iframe -->
+    <div id="player-container"><iframe src="tsports1.html" frameborder="0" scrolling="no" allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <marquee>
+
+                <b> <font color="#9efd38">WAIT FOR 5 SECOND TO LOAD THE VIDEO  :)</font>
+                
+              </b>
+                <br>
+              </marquee>
+              
+              <div class="video-nav">
+                <div class="itemleft">
+                  <div class="icon DagLight">
+                    <svg viewBox="0 0 24 24">
+                      <path fill="currentColor"
+                        d="M20,11H23V13H20V11M1,11H4V13H1V11M13,1V4H11V1H13M4.92,3.5L7.05,5.64L5.63,7.05L3.5,4.93L4.92,3.5M16.95,5.63L19.07,3.5L20.5,4.93L18.37,7.05L16.95,5.63M12,6A6,6 0 0,1 18,12C18,14.22 16.79,16.16 15,17.2V19A1,1 0 0,1 14,20H10A1,1 0 0,1 9,19V17.2C7.21,16.16 6,14.22 6,12A6,6 0 0,1 12,6M14,21V22A1,1 0 0,1 13,23H11A1,1 0 0,1 10,22V21H14M11,18H13V15.87C14.73,15.43 16,13.86 16,12A4,4 0 0,0 12,8A4,4 0 0,0 8,12C8,13.86 9.27,15.43 11,15.87V18Z">
+                      </path>
+                    </svg>
+                    <span>Turn on Light</span>
+                  </div>
+
+                  <div class="icon DagShre">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 24 24">
+                      <g fill="none">
+                        <path d="M3 3h6v2H5v4H3V3z" fill="currentColor"></path>
+                        <path d="M3 21h6v-2H5v-4H3v6z" fill="currentColor"></path>
+                        <path d="M15 21h6v-6h-2v4h-4v2z" fill="currentColor"></path>
+                        <path d="M21 3h-6v2h4v4h2V3z" fill="currentColor"></path>
+                      </g>
+                    </svg>
+                    
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="server_option">
+              
+              <div>
+                <div id="server">
+                  <ul id="VideoServer" class="serverEpisode" style="display: block;">
+
+                    ▶ Top Rated
+                    <br><br>
+
+
+
+     <li>
+        <div class="DagPlayOpt on" data-embed="tsports1.html">
+            <span>
+                <img src="https://i.pinimg.com/736x/b4/d4/7b/b4d47bf32f00603eefdd47332f580629.jpg?=ipl" height="50" width="70" onclick="showPopup('iplpopup')">
+            </span>
+        </div>
+    </li>
+
+
+    <li>
+        <div class="DagPlayOpt on" data-embed="https://tv5.hoichoi24.com//1101/embed.html">
+            <span>
+                <img src="img/tsports.png" height="50" width="70" onclick="showPopup('tsportspopup')">
+            </span>
+        </div>
+    </li>
+
+
+<li>
+    <div class="DagPlayOpt on" data-embed="https://tv5.hoichoi24.com//1102/embed.html">
+            <span>
+                <img src="img/gtv.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+
+<li>
+    <div class="DagPlayOpt on" data-embed="https://tv5.hoichoi24.com/1006/embed.html">
+            <span>
+                <img src="img/starsports1hd.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+    <div class="DagPlayOpt on" data-embed="https://tv5.hoichoi24.com//1007/embed.html">
+            <span>
+                <img src="img/starsports2hd.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+
+<li>
+    <div class="DagPlayOpt on" data-embed="select1.html">
+            <span>
+                <img src="img/starsportsselect1.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+
+<li>
+    <div class="DagPlayOpt on" data-embed="select1.html">
+            <span>
+                <img src="img/starsportsselect2.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+    <div class="DagPlayOpt on" data-embed="https://tv4.hoichoi24.com/play.php?stream=1021">
+            <span>
+                <img src="img/ten1.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+
+    <li>
+    <div class="DagPlayOpt on" data-embed="https://tv4.hoichoi24.com/play.php?stream=1012">
+            <span>
+                <img src="img/ten3.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+           
+           <li>
+    <div class="DagPlayOpt on" data-embed="ten4.html">
+            <span>
+                <img src="https://www.sonypicturesnetworks.com/images/logos/SONY_SportsTen4_HD_Logo_CLR.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+    <div class="DagPlayOpt on" data-embed="https://tv4.hoichoi24.com/play.php?stream=1018">
+            <span>
+                <img src="img/ptvsports.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+  <li>
+    <div class="DagPlayOpt on" data-embed="https://madplay.live/player/jiotv.php?id=Sports18_1_HD_MOB/Fallback/index.m3u8">
+            <span>
+                <img src="img/sports18.png" height="50" width="70">
+            </span>
+        </div>
+    </li> 
+
+    <li>
+    <div class="DagPlayOpt on" data-embed="https://madplay.live/player/jiotv.php?id=Sports18_2_MOB/Fallback/index.m3u8">
+            <span>
+                <img src="https://tvschedule.today/_next/image?url=https%3A%2F%2Fimagesdishtvd2h.whatsonindia.com%2Fdasimages%2Fchannel%2Flandscape%2F360x270%2FybQ6CJkz.png&w=128&q=75" height="50" width="70">
+            </span>
+        </div>
+    </li> 
+
+<li>
+    <div class="DagPlayOpt on" data-embed="https://madplay.live/player/jiotv.php?id=Sports18_3_MOB/Fallback/index.m3u8">
+            <span>
+                <img src="https://tvschedule.today/_next/image?url=https%3A%2F%2Fltsk-cdn.s3.eu-west-1.amazonaws.com%2Fjumpstart%2FTemp_Live%2Fcdn%2FHLS%2FChannel%2FSPORT18_3_Thumbnail-v1%2FSPORT18_3_Thumbnail.png&w=256&q=75" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+    <div class="DagPlayOpt on" data-embed="sports18-khel.html">
+            <span>
+                <img src="https://yt3.googleusercontent.com/cGlsZezhj7JZj_iYhMckfcV5zSci0p2NxlmCP3NWYMNgjmJz500i4lcDN5z-IRscQ-yedtwc=s176-c-k-c0x00ffffff-no-rj" height="50" width="70">
+            </span>
+        </div>
+    </li> 
+
+
+
+
+
+
+
+<li>
+        <div class="DagPlayOpt on" data-embed="skycric.html">
+            <span>
+                <img src="img/skycric.png" height="50" width="70" onclick="showPopup('skycricpopup')">
+            </span>
+        </div>
+    </li>
+
+<li>
+        <div class="DagPlayOpt on" data-embed="https://vip.epanelbd.pw/vip/axv.php?id=SKY_SPORTS_MAIN_EVENT">
+            <span>
+                <img src="img/skymainevent.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <div class="DagPlayOpt on" data-embed="https://vip.epanelbd.pw/vip/axv.php?id=SKY_SPORTS_ARENA">
+            <span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY9RsgGP0Czod3_6Uh7M6aSStVHbi7D9CXk9S6tOwd&s" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+
+
+
+<li>
+        <div class="DagPlayOpt on" data-embed="https://vip.epanelbd.pw/vip/axv.php?id=SKY_SPORTS_FOOTBALL">
+            <span>
+                <img src="https://media.info/i/lf/0/1507600241/6752.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <div class="DagPlayOpt on" data-embed="https://vip.epanelbd.pw/vip/axv.php?id=SKY_SPORTS_ACTION">
+            <span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqykmZ5fdI2gKvOHUw3uUwHg4K4TGfQogRZsNrtn1ODA&s" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <div class="DagPlayOpt on" data-embed="https://vip.epanelbd.pw/vip/axv.php?id=SKY_SPORTS_MIX">
+            <span>
+                <img src="https://seekvectorlogo.com/wp-content/uploads/2021/12/sky-sports-mix-vector-logo-2021.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <div class="DagPlayOpt on" data-embed="https://vip.epanelbd.pw/vip/axv.php?id=SKY_SPORTS_F1">
+            <span>
+                <img src="https://seekvectorlogo.com/wp-content/uploads/2021/12/sky-sports-f1-vector-logo-2021.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <div class="DagPlayOpt on" data-embed="https://vip.epanelbd.pw/vip/axv.php?id=SKY_PREMIER_LEAGUE">
+            <span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiVDSoZnkRO0Wb1ROPR4AWfiTgIur9vZ5Imxm9kcpg&s" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <div class="DagPlayOpt on" data-embed="https://vip.epanelbd.pw/vip/axv.php?id=SKY_SPORTS_GOLF">
+            <span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUKV4OcMn-Gc98XDZbu6C7XCbVDXqpnXBP3PukAQ06&s" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <div class="DagPlayOpt on" data-embed="https://vip.epanelbd.pw/vip/axv.php?id=TNT_1_GB">
+            <span>
+                <img src="https://epanelbd.pw/upload/tnt%20sports/20240319_205609.jpg" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <div class="DagPlayOpt on" data-embed="https://vip.epanelbd.pw/vip/axv.php?id=TNT_2_GB">
+            <span>
+                <img src="https://epanelbd.pw/upload/tnt%20sports/20240319_205323.jpg" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <div class="DagPlayOpt on" data-embed="https://vip.epanelbd.pw/vip/axv.php?id=TNT_3_GB">
+            <span>
+                <img src="https://epanelbd.pw/upload/tnt%20sports/20240319_205222.jpg" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <div class="DagPlayOpt on" data-embed="https://vip.epanelbd.pw/vip/axv.php?id=TNT_4_GB">
+            <span>
+                <img src="https://epanelbd.pw/upload/tnt%20sports/20240319_205106.jpg" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+<li>
+        <div class="DagPlayOpt on" data-embed="https://madplay.live/player/jwplayer.php?https://madplay.live/sports/crichd/master.m3u8/?id=willowusa">
+            <span>
+                <img src="img/willow.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+
+<li>
+     <div class="DagPlayOpt on" data-embed="https://madplay.live/player/jwplayer.php?https://madplay.live/sports/crichd/master.m3u8/?id=willowextra">
+            <span>
+                <img src="img/willowextra.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+
+<li>
+     <div class="DagPlayOpt on" data-embed="https://madplay.live/player/jwplayer.php?https://madplay.live/sports/crichd/master.m3u8/?id=asportshd">
+            <span>
+                <img src="img/asports.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+<li>
+     <div class="DagPlayOpt on" data-embed="https://madplay.live/player/jwplayer.php?https://madplay.live/sports/crichd/master.m3u8/?id=tenspk">
+            <span>
+                <img src="img/tensports.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <div class="DagPlayOpt on" data-embed="https://madplay.live/player/jwplayer.php?https://madplay.live/sports/crichd/master.m3u8/?id=superfotball">
+            <span>
+                <img src="https://www.placemyad.co.za/wp-content/uploads/logo-22.png" height="50" width="70">
+            </span>
+        </div>
+    </li>
+
+
+                    <li>
+                      <div class="DagPlayOpt" data-embed="true1.html">
+                        <span><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV-Lja806lgjAD2IL6GkVvAy5INl4HLaAlN9xra-4ogA&s"
+                            height="50" width="50"></span>
+                      </div>
+                    </li>
+
+                    
+                    <li>
+                      <div class="DagPlayOpt" data-embed="true2.html">
+                        <span><img
+                            src="https://cms.dmpcdn.com/livetv/2019/07/31/afc53720-a686-4376-8ab3-a910f1821c0e_original.png"
+                            height="50" width="50"></span>
+                      </div>
+                    </li>
+                    
+
+
+                    
+
+                    
+
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </section>
+
+
+          <section id="info" itemscope="" itemtype="Movie">
+            
+            <div class="clearfix"></div>
+            <div class="meta tags">
+            </div>
+          </section>
+
+
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  
+  </div>
+
+
+
+
+                    
+<!-- Your existing HTML for the popup -->
+<div id="iplpopup" class="popup">
+    <span class="cancel-btn material-icons" onclick="closePopup('iplpopup')">cancel</span>
+    <div id="popupContent">
+      <h2>Links</h2>
+        <button class="button-4" onclick="playVideo('https://me.webcric.com/frame5.htm')">SKY CRIC</button>
+        <button class="button-4" onclick="playVideo('https://vip.epanelbd.pw/vip/axv.php?id=SKY_SPORTS_CRICKET')">SKY CRIC 4k</button>
+        <button class="button-4" onclick="playVideo('https://tv5.hoichoi24.com//1101/embed.html')">T Sports</button>
+      
+    </div>
+</div>
+
+<div id="tsportspopup" class="popup">
+    <span class="cancel-btn material-icons" onclick="closePopup('tsportspopup')">cancel</span>
+    <div id="popupContent">
+      <h2>Links</h2>
+        <!-- Content specific to your popup, if any -->
+        <button class="button-4" onclick="playVideo('https://tv5.hoichoi24.com//1101/embed.html')">HD</button>
+        <button class="button-4" onclick="playVideo('tsports1.html')">HD 2</button>
+      
+    </div>
+</div>
+
+<div id="skycricpopup" class="popup">
+    <span class="cancel-btn material-icons" onclick="closePopup('skycricpopup')">cancel</span>
+    <div id="popupContent">
+      <h2>Links</h2>
+        <button class="button-4" onclick="playVideo('skycrichd.html')">4k</button>
+        <button class="button-4" onclick="playVideo('https://madplay.live/player/jwplayer.php?https://madplay.live/sports/crichd/master.m3u8/?id=skyscric')">1080P</button>
+        <button class="button-4" onclick="playVideo('https://me.webcric.com/frame5.htm')">720P</button>
+      
+    </div>
+</div>
+
+
+<script>
+        // Your existing JavaScript functions here
+    function showPopup(popupId) {
+        var popup = document.getElementById(popupId);
+        popup.style.display = "block";
+    }
+
+    function closePopup(popupId) {
+        var popup = document.getElementById(popupId);
+        popup.style.display = "none";
+    }
+
+    function playVideo(embedPath) {
+        var embedIframe = document.querySelector('#player_embed iframe');
+        // Set the source of the embedded video
+        embedIframe.src = embedPath;
+
+        // Close the popup
+        closePopup('iplpopup');
+  }
+
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const player = new Plyr('#player-container iframe', {
+    // Plyr options
+  });
+
+  // Handle sticky behavior
+  const stickyContainer = document.querySelector('.sticky-container');
+  const playerContainer = document.querySelector('#player-container');
+  const footer = document.querySelector('footer');
+
+  window.addEventListener('scroll', function () {
+    const scrollOffset = window.scrollY + window.innerHeight;
+    const footerOffset = footer.offsetTop;
+
+    if (scrollOffset > footerOffset) {
+      stickyContainer.style.position = 'relative';
+      playerContainer.style.position = 'absolute';
+      playerContainer.style.bottom = '0';
+    } else {
+      stickyContainer.style.position = 'static';
+      playerContainer.style.position = 'static';
+      playerContainer.style.bottom = 'auto';
+    }
+  });
+});
+
+
+</script>
+  
+        <script disable-devtool-auto=
+'true'
+
+src=
+'https://cdn.jsdelivr.net/npm/disable-devtool'
+clear-log=
+'true'
+disable-select=
+
+'true' disable-copy=
+'true'
+
+disable-cut=
+
+'true' disable-paste=
+
+'true'></script>
+
+  <script async="async">
+    //<![CDATA[
+    (function () {
+      const e = document.querySelectorAll(".DagPlayOpt");
+      e.length > 0 && (e.forEach(t => {
+        t.addEventListener("click", function (t) {
+          const n = t.currentTarget,
+            c = n.dataset.embed;
+          document.querySelector("#pembed iframe").src = c, document.querySelector("#pembed iframe").contentWindow.location.replace(c), e.forEach(e => e.classList.remove("on")), n.classList.add("on");
+          const o = document.querySelectorAll(".resIn");
+          o.length > 0 && o.forEach(e => {
+            e.id == n.dataset.id ? e.style.display = "block" : e.style.display = "none"
+          })
+        })
+      }), e[0].click());
+      const t = document.getElementById("shadow"),
+        n = document.querySelector(".DagLight");
+      t && n && (t.style.display = "none", n.addEventListener("click", function (e) {
+        const n = e.currentTarget;
+        t.style.height = document.body.scrollHeight, "none" == t.style.display ? (n.querySelector("span").innerHTML = "Turn on Light", n.classList.add("turnedOff"), t.style.display = "block") : (n.querySelector("span").innerHTML = "Turn off Light", n.classList.remove("turnedOff"), t.style.display = "none")
+      }));
+      const c = document.querySelector(".DagShre");
+      c.addEventListener("click", function (e) {
+        const t = document.querySelector(".gta-ms");
+        t && t.classList.toggle("expand")
+      })
+    })();
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("serverEpisode");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("serverOpen").click();
+  </script>
+  <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = "https://"6ani-me.disqus.com;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function () { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://6ani-me.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<script>
+    function showPopup(popupId) {
+        var popup = document.getElementById(popupId);
+        popup.style.display = "block";
+    }
+
+    function closePopup(popupId) {
+        var popup = document.getElementById(popupId);
+        popup.style.display = "none";
+    }
+
+    function buttonClicked(link) {
+        window.open(link, '_blank'); // Open link in a new tab
+    }
+</script>
+
+  <iframe style="display: none;"></iframe>
+</body>
+
+</html>
